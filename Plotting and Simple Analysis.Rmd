@@ -1,7 +1,7 @@
 ---
 title: "Homework 1 - MATH 318"
-output:
-  github_document
+author: Bao Dang
+output: github_document
 ---
 
 **1. Download the data set hw1.csv.**
