@@ -1,5 +1,5 @@
 # R-Projects
-Data Science Projects in R (Homework for MATH 318 at Drexel)
+Data Science Projects in R (Assignment for MATH 318 at Drexel)
 
 **3-Predict-Energy-Output-of-Power-Plant.md**
 - Plot heat map
