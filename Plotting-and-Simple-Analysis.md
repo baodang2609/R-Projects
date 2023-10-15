@@ -86,13 +86,13 @@ library(ggplot2)
 ggplot(data = hw1.df, mapping = aes(x = Site)) + geom_histogram(binwidth = .1, fill = "darkorange") + theme_bw()
 ```
 
-![](Plotting-and-Simple-Analysis_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](Graphs/Plotting-and-Simple-Analysis_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ``` r
 ggplot(data = hw1.df, mapping = aes(x = Value)) + geom_histogram(binwidth = .2, fill = "white") + theme_dark()
 ```
 
-![](Plotting-and-Simple-Analysis_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](Graphs/Plotting-and-Simple-Analysis_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 **6. Plot the data set as a scatter plot (using geom_point) with filled
 red pluses as the markers.**
@@ -101,7 +101,7 @@ red pluses as the markers.**
 ggplot(data = hw1.df) + geom_point(mapping = aes(x = Site, y = Value), shape = 3, color="red") + theme_grey()
 ```
 
-![](Plotting-and-Simple-Analysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](Graphs/Plotting-and-Simple-Analysis_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 Data follow a linear trend line which shows Value value is increasing at
 a steady rate as Site value increases.
