@@ -1,6 +1,12 @@
 # R-Projects
 Data Science Projects in R (Assignment for MATH 318 at Drexel)
 
+**2-Statistical-Analysis-on-Wine-Datasets.md**
+- Data transformation (add columns, join df, split df)
+- Statistics summary for attributes
+- Box plots
+- QQ plots to verify normal distribution
+
 **3-Predict-Energy-Output-of-Power-Plant.md**
 - Plot heat map
 - Plot pairwise scatter plots
