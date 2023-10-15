@@ -1,4 +1,4 @@
-Homework 3 - MATH 318
+Project 3
 ================
 Bao Dang
 
