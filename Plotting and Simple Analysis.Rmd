@@ -1,0 +1,68 @@
+---
+title: "Homework 1 - MATH 318"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+---
+
+**1. Download the data set hw1.csv.**
+
+```{r}
+library(readxl) # part of tidyverse
+```
+
+```{r}
+hw1.csv = read.csv("C:\\Users\\I566801\\OneDrive - SAP SE\\Documents\\Drexel\\MATH 318\\Week 1\\hw1.csv")
+```
+
+**2. Load the data sets into R as a data frame**
+
+```{r}
+library(tidyverse)
+hw1.df = as_tibble(hw1.csv) # casts to tibble type
+print(hw1.df)
+```
+
+**3. What are the names of variables? How many samples are there in this dataset?**
+
+-   Variable names: Site, Value.
+
+-   Number of samples: 100
+
+**4. Find the 80% percentile value for each of the variables in the data set.**
+
+```{r}
+quantile(hw1.df$Site, .8) # get the 80% percentile value of 'Site'
+```
+
+This indicates 7.7534 is higher than 80% of other values of Site.
+
+```{r}
+quantile(hw1.df$Value, .8) # get the 80% percentile value of 'Value'
+```
+
+This indicates -4.487722 is higher than 80% of other values of 'Value'
+
+**5. Using ggplot2 with this data frame, plot a histogram of each of the variables, using different themes for each of the plots.**
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+ggplot(data = hw1.df, mapping = aes(x = Site)) + geom_histogram(binwidth = .1, fill = "darkorange") + theme_bw()
+```
+
+```{r}
+ggplot(data = hw1.df, mapping = aes(x = Value)) + geom_histogram(binwidth = .2, fill = "white") + theme_dark()
+```
+
+**6. Plot the data set as a scatter plot (using geom_point) with filled red pluses as the markers.**
+
+```{r}
+ggplot(data = hw1.df) + geom_point(mapping = aes(x = Site, y = Value), shape = 3, color="red") + theme_grey()
+```
+
+Data follow a linear trend line which shows Value value is increasing at a steady rate as Site value increases.
